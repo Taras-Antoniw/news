@@ -35,7 +35,8 @@ mongoose.connect("mongodb://localhost/mongoHeadlines", { useNewUrlParser: true }
 // A GET route for scraping the NYT website
 app.get("/scrape", function(req, res) {
   // First, we grab the body of the html with axios
-  var key = "api-key=e7f9620ade334806b2c913e061942370";
+  var key = "api-key=dZM0eBmTGXXpGr49j6IbeXX8KN18E6I0";
+
   var apiurl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?";
 
   axios.get(apiurl+key).then(function(response) {
